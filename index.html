@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_div">
+        <p class="header_div_p1"><i class="fa-solid fa-file-lines"></i></p>
+        <input
+          id="header_div_input"
+          class="header_div_input"
+          type="text"
+          value="Новая форма"
+        />
+        <div class="drob_blok01" id="drob_blok01">
+          <button class="main_form_div1_but" onclick="boldchange01()">
+            <i class="fa-solid fa-b"></i>
+          </button>
+          <button class="main_form_div1_but" onclick="italicchange01()">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button class="main_form_div1_but" onclick="underlinechange01()">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+          <button id="main_form_div1_but" class="btn trigger" onclick="">
+            <i class="fa-solid fa-link"></i>
+          </button>
+          <button class="main_form_div1_but" onclick="deletechange01()">
+            <i class="fa-solid fa-text-slash"></i>
+          </button>
+        </div>
+        <p class="header_div_p3"><i class="fa-regular fa-star"></i></p>
+      </div>
+      <div class="header_div1">
+        <p class="header_div1p1"><i class="fa-solid fa-palette"></i></p>
+        <p class="header_div1p2"><i class="fa-regular fa-eye"></i></p>
+        <p class="header_div1p3"><i class="fa-solid fa-rotate-left"></i></p>
+        <p><i class="fa-solid fa-rotate-right"></i></p>
+        <button class="header_div1_button">Отправить</button>
+        <b class="header_div1_b">...</b>
+        <div class="pr-img">
+          <button class="pr-img_button" id="upload-button">+</button>
+          <input
+            type="file"
+            id="profile-image-input"
+            accept="image/*"
+            style="display: none"
+          />
+          <br />
+          <img
+            id="profile-image"
+            src=""
+            alt="Profil Rasmi"
+            style="display: none; object-fit: cover"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <div class="add_new_form">
+          <div>
+            <button id="add_new_form_plus_addForm" class="add_new_form_ICON">
+              <i class="fa-solid fa-circle-plus"></i>
+            </button>
+          </div>
+          <div>
+            <button class="add_new_form_ICON">
+              <i class="fa-solid fa-file-import"></i>
+            </button>
+          </div>
+          <div>
+            <button class="add_new_form_ICON">
+              <i class="fa-solid fa-t"></i>
+            </button>
+          </div>
+          <div>
+            <button class="add_new_form_ICON">
+              <i class="fa-regular fa-image"></i>
+            </button>
+          </div>
+          <div>
+            <button class="add_new_form_ICON">
+              <i class="fa-brands fa-youtube"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main_form_header">
+          <a href="#"><p>Вопросы</p></a>
+          <a href="#"> <p>Ответы</p></a>
+          <a href="#"> <p>Настройки</p></a>
+        </div>
+        <div class="main_form">
+          <div class="main_form_div1">
+            <input
+              id="main_form_div1_inputs"
+              type="text"
+              class="main_form_div1_input"
+              value="Новая форма"
+            />
+            <div class="drob_blok" id="drob_blok">
+              <button class="main_form_div1_but" onclick="boldchange()">
+                <i class="fa-solid fa-b"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="italicchange()">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="underlinechange()">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+              <button
+                id="main_form_div1_but"
+                class="btn trigger"
+                onclick="urlchange()"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="deletechange()">
+                <i class="fa-solid fa-text-slash"></i>
+              </button>
+            </div>
+            <hr />
+            <input
+              id="main_form_div1_inputs1"
+              class="main_form_div1_input2"
+              type="text"
+              value="Описание"
+            />
+            <div class="drob_blok2" id="drob_blok2">
+              <button class="main_form_div1_but" onclick="boldchange1()">
+                <i class="fa-solid fa-b"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="italicchange1()">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="underlinechange1()">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+              <button id="main_form_div1_but" class="btn trigger" onclick="">
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button class="main_form_div1_but" onclick="deletechange1()">
+                <i class="fa-solid fa-text-slash"></i>
+              </button>
+            </div>
+            <hr />
+          </div>
+          <div class="main_form_div2"></div>
+          <div class="modal">
+            <div class="login-box">
+              <span class="close-button">&times;</span>
+              <h2>Добавление ссылки</h2>
+              <form>
+                <div class="user-box">
+                  <input type="text" name="username" id="text" required />
+                  <label>Отображаемый текст</label>
+                  <span id="err"></span>
+                </div>
+                <div class="user-box">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                  <label>Ссылка</label>
+                  <span id="err2"></span>
+                </div>
+                <button type="submit" id="btn">Ok</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="add_form" class="add_form">
+          <div id="add"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
