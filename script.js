@@ -357,3 +357,28 @@ function ShowHelloMessage() {
   document.getElementById("add").appendChild(newDiv);
 }
 newForm.onclick = ShowHelloMessage;
+// Add list
+let addList = document.getElementById("addList");
+function ShowHelloMessage1() {
+  let newDiv1 = document.createElement("div");
+  newDiv1.innerHTML = `<div>hello</div>`;
+  document.getElementById("add").appendChild(newDiv1);
+}
+addList.onclick = ShowHelloMessage1;
+
+// Page not found
+const modal1 = document.getElementById("modal1");
+const btn1 = document.getElementById("add_new_form_ICON");
+const span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function () {
+  modal1.style.display = "block";
+};
+span1.onclick = function () {
+  modal1.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal1.style.display = "none";
+  }
+};

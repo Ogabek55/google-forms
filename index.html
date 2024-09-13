@@ -77,12 +77,21 @@
           </div>
           <div>
             <button class="add_new_form_ICON">
-              <i class="fa-solid fa-file-import"></i>
+              <i id="add_new_form_ICON" class="fa-solid fa-file-import"></i>
             </button>
+            <div id="modal1" class="modal1">
+              <div class="modal-content1">
+                <span class="close1">&times;</span>
+                <h2>New Window</h2>
+                <form id="form1">
+                  <h1>Page not found ...</h1>
+                </form>
+              </div>
+            </div>
           </div>
           <div>
-            <button class="add_new_form_ICON">
-              <i class="fa-solid fa-t"></i>
+            <button class="add_new_form_ICON1">
+              <i id="addList" class="fa-solid fa-t"></i>
             </button>
           </div>
           <div>
@@ -92,7 +101,7 @@
           </div>
           <div>
             <button class="add_new_form_ICON">
-              <i class="fa-brands fa-youtube"></i>
+              <i id="loadButton" class="fa-brands fa-youtube"></i>
             </button>
           </div>
         </div>
@@ -168,12 +177,7 @@
                   <span id="err"></span>
                 </div>
                 <div class="user-box">
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    required
-                  />
+                  <input type="text" name="password" id="password" required />
                   <label>Ссылка</label>
                   <span id="err2"></span>
                 </div>
